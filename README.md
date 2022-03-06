@@ -17,7 +17,8 @@ python train.py （训练参数同YOLOv5）
 ```     
 ## 2.生成.tflite模型
 ```
-python export.py --weights 训练模型路径.pt --cfg models/yolov5s.yaml --img 640（必须等于DetectorFactory.java里的inputSize）  
+将训练好的模型放在weights文件夹下。
+python export.py --weights weights/（模型名）.pt --cfg models/yolov5s.yaml --img 640（必须等于DetectorFactory.java里的inputSize）  
 ```
 ## 3.模型移植到安卓手机上（需要Android Studio）
 ```
